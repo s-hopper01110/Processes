@@ -9,6 +9,10 @@
 int main(void)
 {
     // Your code here 
-    
+    FILE *fp;
+    fp = fopen("text.txt", "w");
+    fprintf(fp, "hello!\n");
+
+    fclose(fp);
     return 0;
 }
